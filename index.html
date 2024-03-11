@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <h1>Menu</h1>
     <section>
-        <form>
-                <button type="button" onclick="numpar()">Mostrar numeros pares</button>
-                <button type="button" onclick="">Mostrar numeros impares</button>
+        <form id="formulario">
+                <button type="button" onclick="numPar()">Mostrar numeros pares</button>
+                <button type="button" onclick="numImpar()">Mostrar numeros impares</button>
         <h2>Ingrese un numero par para mostrarle numeros mayores a ese</h2>
-            <input type="number" name="MayorPar" placeholder="Ingrese el numero"></input>
-                <button type="button" onclick="">Aceptar</button>
+            <input type="number" name="MayorPar" id="numMayorPar" min="1" max="200" placeholder="Ingrese el numero"></input>
+                <button type="button" onclick="mayPar()">Aceptar</button>
         <h2>Ingrese un numero impar para mostrarle numeros mayores a ese</h2>
-            <input type="number" name="MayorImpar" placeholder="Ingrese el numero"></input>
-                <button type="button" onclick="">Aceptar</button>
+            <input type="number" name="MayorImpar" id="numMayorImpar" placeholder="Ingrese el numero" min="1" max="200"></input>
+                <button type="button" onclick="mayImpar()">Aceptar</button>
         </form>
     </section>
 
