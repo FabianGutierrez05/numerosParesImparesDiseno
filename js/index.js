@@ -3,6 +3,10 @@ let numeros = [];
         numeros.push(i);
     }
 
+function todos(){
+    numeros.length;
+    console.log(numeros);
+}
 
 function numPar(){
     const par= numeros.filter(filtroPar);
