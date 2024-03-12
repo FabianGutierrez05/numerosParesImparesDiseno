@@ -14,11 +14,11 @@ function numPar(){
 }
 
 function numImpar(){    
-const par= numeros.filter(filtroImpar);
+const impar= numeros.filter(filtroImpar);
 function filtroImpar(impares){
         return impares%2!=0;    
     }
-console.log(numeros);
+console.log(impar);
     
 }
 
@@ -42,3 +42,5 @@ function mayImpar(){
     }
     console.log(par);   
 }
+
+/*document.getElementById('tabla').innerHTML='<p>hola</p>'*/
