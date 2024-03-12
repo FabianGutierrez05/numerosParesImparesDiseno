@@ -27,8 +27,8 @@ console.log(impar);
 }
 
 function mayPar(){
-    const formulario=$('#formulario');
-    const numMay= $('#numMayorPar').val();
+    const formulario=document.forms['formulario'];
+    const numMay= formulario['numMayorPar'].value;
     console.log(numMay);
     const par= numeros.filter(filtroPar);
     function filtroPar(pares){
@@ -37,8 +37,8 @@ function mayPar(){
     console.log(par);
 }
 function mayImpar(){
-    const formulario=$('#formulario');
-    const numMay= $('#numMayorImpar').val();
+    const formulario=document.forms['formulario'];
+    const numMay= formulario['numMayorImpar'].value;
     console.log(numMay);
     const par= numeros.filter(filtroImpar);
     function filtroImpar(pares){
