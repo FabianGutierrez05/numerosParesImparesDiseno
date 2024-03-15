@@ -67,4 +67,3 @@ function mayImpar(){
     document.getElementById("impMayImp").innerHTML = impar;
 }
 
-/*document.getElementById('tabla').innerHTML='<p>hola</p>'*/
