@@ -30,7 +30,7 @@ function filtroImpar(impares){
         return 'El numero impar en la posicion [' + (index+1)+ '] es: '+ value;
     })
     console.log(imparfilt);
-    
+    document.getElementById("impPar").innerHTML = imparfilt;
 }
 
 function mayPar(){
