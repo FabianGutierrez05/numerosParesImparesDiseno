@@ -11,9 +11,13 @@ function todos(){
 function numPar(){
     const par= numeros.filter(filtroPar);
     function filtroPar(pares){
-        return pares%2==0;    
+        return pares%2==0; 
+    ;
     }
-    console.log(par);
+    const parfilt = par.map((value, index)=>{
+        return 'El numero par en la posicion [' + (index+1)+ '] es: '+ value;
+    })
+    console.log(parfilt);
 
 }
 
@@ -22,7 +26,10 @@ const impar= numeros.filter(filtroImpar);
 function filtroImpar(impares){
         return impares%2!=0;    
     }
-console.log(impar);
+    const imparfilt = impar.map((value, index)=>{
+        return 'El numero impar en la posicion [' + (index+1)+ '] es: '+ value;
+    })
+    console.log(imparfilt);
     
 }
 
