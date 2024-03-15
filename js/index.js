@@ -4,14 +4,12 @@ let numeros = [];
     }
 
 function todos(){
-    const num= numeros.filter(filtroTodos);
-    function filtroTodos(todos){  
-    }
+    const num= numeros;
     const todfilt = num.map((value, index)=>{
         return ' El numero en la posicion [' + (index+1)+ '] es: '+ value;
     })
-    console.log(numeros);
-    document.getElementById("impTodos").innerHTML = numeros;
+    console.log(todfilt);
+    document.getElementById("impTodos").innerHTML = todfilt;
 }
 
 function numPar(){
